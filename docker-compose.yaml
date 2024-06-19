@@ -1,0 +1,11 @@
+version: '3.8'
+
+services:
+  nyaascraper:
+    container_name: nyaascraper
+    build: .
+    ports:
+      - "4999:4999"
+    environment:
+      - FLASK_APP=main.py
+    restart: unless-stopped

@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: nyaascraper-deployment
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: nyaascraper
+  template:
+    metadata:
+      labels:
+        app: nyaascraper
+    spec:
+      containers:
+      - name: nyaascraper
+        image: nyaascraper:latest
+        ports:
+        - containerPort: 4999
