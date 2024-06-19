@@ -53,7 +53,7 @@ python nyaascraper.py "https://nyaaaa.antidrive.shop/?f=1&c=3_1&q=digital+-ana+-
 Extract and display only `.torrent` links:
 
 ```bash
-python nyaascraper.py "https://nyaaaa.antidrive.shop/?f=1&c=3_1&q=digital+-ana+-weekly&p=2" -f .torrent
+python nyaascraper.py "https://nyaa.si/?f=1&c=3_1&q=digital+-ana+-weekly&p=2" -f .torrent
 ```
 
 ### Save Links to a File
@@ -61,7 +61,7 @@ python nyaascraper.py "https://nyaaaa.antidrive.shop/?f=1&c=3_1&q=digital+-ana+-
 Extract links and save them to `links.txt`:
 
 ```bash
-python nyaascraper.py "https://nyaaaa.antidrive.shop/?f=1&c=3_1&q=digital+-ana+-weekly&p=2" -o links.txt
+python nyaascraper.py "https://nyaa.si/?f=1&c=3_1&q=digital+-ana+-weekly&p=2" -o links.txt
 ```
 
 ### Combined Usage
@@ -69,7 +69,7 @@ python nyaascraper.py "https://nyaaaa.antidrive.shop/?f=1&c=3_1&q=digital+-ana+-
 Filter by file type and save the links to a file:
 
 ```bash
-python nyaascraper.py "https://nyaaaa.antidrive.shop/?f=1&c=3_1&q=digital+-ana+-weekly&p=2" -f .torrent -o links.txt
+python nyaascraper.py "https://nyaa.si/?f=1&c=3_1&q=digital+-ana+-weekly&p=2" -f .torrent -o links.txt
 ```
 
 # Additional Information
