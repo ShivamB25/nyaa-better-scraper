@@ -1,5 +1,5 @@
 # Use an official Python runtime as a parent image
-FROM python:3.9-slim AS builder
+FROM python:3.13-slim AS builder
 
 # Set the working directory in the container
 WORKDIR /app
@@ -16,7 +16,7 @@ COPY requirements.txt .
 RUN pip install --no-cache-dir -r requirements.txt
 
 # Use a smaller base image for the final build
-FROM python:3.9-slim
+FROM python:3.13-slim
 
 # Set the working directory in the container
 WORKDIR /app
